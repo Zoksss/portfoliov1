@@ -5,6 +5,7 @@ import "./style/style.scss";
 
 import Nav from "./Components/Nav/Nav";
 import Hero from "./Components/Hero/Hero";
+import Work from "./Components/Work/Work";
 
 import Github from "./images/github.png"
 import Linkedin from "./images/linkedin.png"
@@ -15,9 +16,9 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
       <div className="container">
         <header>
-          <Nav />
           <Hero />
           <h6 className="header-bg-text">home</h6>
           <div className="side-social-icons">
@@ -27,6 +28,7 @@ function App() {
             <div className="line"></div>
           </div>
         </header>
+        <Work />
       </div>
     </div>
   );

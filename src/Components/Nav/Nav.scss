@@ -6,6 +6,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 6px 0;
+    max-width: 1920px;
+    margin-inline: auto;
+    width: 100%;
+    padding: 10px 35px;
 }
 
 .nav-logo {
@@ -31,6 +35,45 @@ nav {
     outline: none;
     z-index: 101;
     cursor: pointer;
+
+
+
+    .hamburger-line {
+        height: 3px;
+        width: 34px;
+        margin: 8px 0;
+        background-color: $light;
+        z-index: 1000;
+        margin-left: 5px;
+        transition: $transition;
+    }
+
+    .hamburger-line2 {
+        width: 45px;
+        margin-left: -5px;
+    }
+
+    .hamburger-line3 {
+        width: 25px;
+        margin-left: 15px;
+    }
+
+    &:hover {
+        .hamburger-line {
+            width: 40px;
+            margin-left: 0px;
+        }
+
+        .hamburger-line2 {
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        .hamburger-line3 {
+            width: 50px;
+            margin-left: -10px;
+        }
+    }
 }
 
 .nav-logo-text {
@@ -49,7 +92,7 @@ nav {
 
 .nav-open {
     display: flex;
-    position: absolute;
+    position: fixed;
     background-color: $secondary;
     top: 0;
     left: 0;
@@ -70,12 +113,13 @@ nav {
         max-width: 1920px;
         width: 100%;
         margin-inline: auto;
-
         .nav-social-media {
+            display: block;
             li {
                 margin-bottom: -10px;
             }
         }
+
         a {
             text-decoration: none;
             color: $light;
@@ -89,11 +133,15 @@ nav {
     }
 }
 
-@media screen and (min-width: 576px){
-    .nav-logo-text{
+@media screen and (min-width: 576px) {
+    .nav-logo-text {
         display: block;
     }
-    .nav-logo{
+
+    .nav-logo {
+        display: none;
+    }
+    .nav-social-media{
         display: none;
     }
 }

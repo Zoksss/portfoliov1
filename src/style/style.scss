@@ -1,0 +1,159 @@
+@import "./variables";
+
+
+html {
+    overflow-y: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 62%;
+        height: 100vh;
+        background-color: $secondary;
+        z-index: -1;
+    }
+}
+
+h1 {
+    font-size: 2.31rem;
+    font-weight: 600;
+    color: $light;
+}
+
+h2 {
+    font-size: 1.31rem;
+    font-weight: 500;
+    color: $light;
+}
+
+p {
+    font-size: 0.92rem;
+    color: $light;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+h6 {
+    font-size: 120px;
+    font-weight: 600;
+    color: $light;
+    opacity: 0.02;
+}
+
+.p-regular {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.colored {
+    color: $accent;
+}
+
+.cta {
+    font-size: 1.1rem;
+    color: $accent;
+    border: 2px solid $accent;
+    padding: 12px 25px;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 34px;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 576px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 54px;
+        margin-top: -30px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 700px;
+    }
+
+    .p-regular {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cta {
+        font-size: 21px;
+        padding: 15px 30px;
+    }
+
+    body {
+        &::before {
+            width: 37%;
+        }
+    }
+}
+
+
+
+// header style
+
+.header-bg-text {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+
+.side-social-icons {
+    display: none;
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .line {
+        height: 100px;
+        width: 3px;
+        background-color: $light;
+        margin: 20px 0;
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        margin: 20px 0;
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .header-bg-text {
+        bottom: -10px;
+        font-size: 200px;
+        right: 66vw;
+    }
+    .side-social-icons{
+        display: flex;
+    }
+}

@@ -1,0 +1,69 @@
+@import "../../style/variables";
+
+.contact {
+    width: 100%;
+    background-color: $secondary;
+    padding: 100px 0;
+    box-shadow: 0 0 0 100vmax $secondary;
+    clip-path: inset(0 -100vmax);
+    position: relative;
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .cta {
+        margin-top: 10px;
+    }
+
+    .getintouch {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        text-decoration: none;
+
+        img {
+            margin-right: 10px;
+        }
+
+        p {
+            font-weight: 400;
+            border-bottom: 1px solid $light;
+
+        }
+
+    }
+
+    h6 {
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        font-size: 70px;
+        z-index: -1;
+    }
+
+    a {
+        p {
+            transition: $transition;
+
+        }
+        &:hover {
+            p {
+                color: $accent;
+                border-bottom: 1px solid $accent;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .contact {
+        h3 {
+            font-size: 60px;
+        }
+
+        h6 {
+            font-size: 140px;
+        }
+    }
+}

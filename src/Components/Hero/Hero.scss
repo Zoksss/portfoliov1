@@ -14,11 +14,17 @@
     }
 
     h1 {
-        margin-bottom: -5px;
+        font-size: 2.31rem;
+    }
+
+    h2 {
+        font-size: 1.31rem;
+        margin-top: -5px;
     }
 
     .hero-desc {
         margin-top: 20px;
+        max-width: 600px;
     }
 
     button {
@@ -26,9 +32,45 @@
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     .hero {
         max-width: 100%;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-top: -10px;
+        }
+
+        .hero-desc {
+            font-size: 20px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1204px) {
+    .hero {
+
+        h1 {
+            font-size: 80px;
+        }
+
+        h2 {
+            font-size: 54px;
+            margin-top: -20px;
+        }
+
+        .hero-desc {
+            font-size: 20px;
+            max-width: 70%;
+
+        }
+
     }
 
 }

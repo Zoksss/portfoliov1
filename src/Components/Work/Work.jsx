@@ -6,7 +6,7 @@ function Work() {
 
     return (
         <div className="work-section">
-            <div>
+            <div className="work-section-title">
                 <p className="colored"> [ Some of my ]</p>
                 <h3>Creations</h3>
                 <p className="creations-desc">Some of my projects that I worked on since the journey started.</p>
@@ -27,6 +27,7 @@ function Work() {
                 <p>You can see more of my work on my GitHub Profile.</p>
                 <a href="github">github</a>
             </div>
+            <h6>work</h6>
         </div>
     );
 }

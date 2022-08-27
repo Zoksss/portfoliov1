@@ -1,8 +1,14 @@
-@import "./variables";
-
+@import "./_variables";
+@import "./_app.scss";
+@import "./_nav.scss";
+@import "./_contact.scss";
+@import "./_footer.scss";
+@import "./_hero.scss";
+@import "./_work.scss";
 
 
 * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -217,3 +223,6 @@ header {
         display: flex;
     }
 }
+
+
+

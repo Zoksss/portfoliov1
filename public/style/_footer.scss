@@ -37,15 +37,24 @@
         li{
             margin: 10px 20px;
             font-weight: 300;
+           
 
             a{
                 text-decoration: none;
                 color: $light;
+                transition: $transition;
+                &:hover{
+                    color: $accent;
+                }
             }
         }
     }
     .footer-coment{
         margin-top: 120px;
+    }
+
+    h6{
+        left: -30vw;
     }
 }
 
@@ -54,9 +63,8 @@
         .footer-name{
             font-size: 40px;
         }
-        ul{
-            flex-direction: row;
- 
-        }
+    }
+    ul{
+        flex-direction: row !important;
     }
 }

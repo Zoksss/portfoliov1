@@ -47,16 +47,7 @@ body {
     position: relative;
     overflow-x: hidden;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 62%;
-        height: 100vh;
-        background-color: $secondary;
-        z-index: -1;
-    }
+ 
 }
 
 h1 {
@@ -90,6 +81,7 @@ h6 {
     font-weight: 600;
     color: $light;
     opacity: 0.02;
+    transition: 500ms all ease;
 }
 
 .p-regular {
@@ -110,9 +102,30 @@ h6 {
     background-color: transparent;
     font-weight: 400;
     transition: $transition;
-
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        width:99%;
+        height: 99%;
+        transition: $transition;
+   }
     &:hover {
-        transform: scale(1.1);
+        background-color: $accent;
+        color: $secondary;
+
+        &::before {
+            width: 120%;
+            height: 120%;
+            border-right: 2px solid $accent;
+            border-left: 2px solid $accent;
+       }
     }
 }
 
@@ -163,6 +176,19 @@ h6 {
 header {
     height: 73.5vh;
     position: relative;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 42%;
+        height: 100vh;
+        background-color: $secondary;
+        z-index: -1;
+    }
 }
 
 .header-bg-text {
@@ -175,7 +201,7 @@ header {
     display: none;
     position: absolute;
     right: 35px;
-    bottom: 35px;
+    top: 55vh;
     flex-direction: column;
     width: 100%;
     max-width: 1920px;
@@ -194,12 +220,15 @@ header {
         margin: 20px 0;
         margin-right: 15px;
     }
-    a{
+
+    a {
         pointer-events: all;
+
         &:hover {
             transform: translate(1.1);
         }
     }
+
     img {
         width: 35px;
         height: 35px;
@@ -214,15 +243,12 @@ header {
 
 @media screen and (min-width: 576px) {
     .header-bg-text {
-        bottom: -10px;
-        font-size: 200px;
-        right: 66vw;
+        bottom: -0 !important;
+        font-size: 200px !important;
+        right: 86vw !important;
     }
 
     .side-social-icons {
         display: flex;
     }
 }
-
-
-

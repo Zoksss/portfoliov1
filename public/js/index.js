@@ -2,8 +2,18 @@ const navOpen = document.querySelector("#navOpen");
 const hamburger = document.querySelector("#hamburger");
 
 hamburger.addEventListener("click", () => {
-    if(navOpen.style.display == "none")
+    if (navOpen.style.display == "none") {
         navOpen.style.display = "flex";
-    else navOpen.style.display = "none";
+        navOpen.classList.add("nav-open-anim");
+    }
+    else {
+        navOpen.classList.remove("nav-open-anim");
+        navOpen.classList.add("nav-close-anim");
+        setTimeout(() => {
+            navOpen.style.display = "none";
+            navOpen.classList.remove("nav-close-anim");
+        }, 800);
+
+    }
 
 });

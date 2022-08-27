@@ -156,7 +156,7 @@ nav {
   position: absolute;
   background-color: #222630;
   top: 0;
-  left: 0;
+  left: -50%;
   height: 100vh;
   width: 100%;
   z-index: 10000;
@@ -168,6 +168,8 @@ nav {
           justify-content: end;
   padding: 30px 35px;
   padding-top: 70px;
+  -webkit-animation: NavOpen 500ms forwards;
+          animation: NavOpen 500ms forwards;
 }
 
 .nav-open .nav-links {
@@ -210,6 +212,60 @@ nav {
   }
   .nav-social-media {
     display: none;
+  }
+}
+
+.nav-open-anim {
+  -webkit-animation: NavOpen 700ms forwards;
+          animation: NavOpen 700ms forwards;
+}
+
+.nav-close-anim {
+  -webkit-animation: NavClose 700ms forwards;
+          animation: NavClose 700ms forwards;
+}
+
+@-webkit-keyframes NavOpen {
+  from {
+    left: -20%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes NavOpen {
+  from {
+    left: -20%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes NavClose {
+  from {
+    left: 0%;
+    opacity: 1;
+  }
+  to {
+    left: -20%;
+    opacity: 0;
+  }
+}
+
+@keyframes NavClose {
+  from {
+    left: 0%;
+    opacity: 1;
+  }
+  to {
+    left: -20%;
+    opacity: 0;
   }
 }
 

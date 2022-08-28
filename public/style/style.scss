@@ -223,9 +223,16 @@ h6 {
         padding: 15px 30px;
     }
 
-    body {
+    #butter{
         &::before {
-            width: 37%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 42%;
+            height: 100vh;
+            background-color: $secondary;
+            z-index: -1;
         }
     }
 }

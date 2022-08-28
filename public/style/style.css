@@ -944,8 +944,15 @@ h6 {
     font-size: 21px;
     padding: 15px 30px;
   }
-  body::before {
-    width: 37%;
+  #butter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42%;
+    height: 100vh;
+    background-color: #222630;
+    z-index: -1;
   }
 }
 

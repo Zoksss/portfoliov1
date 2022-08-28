@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden !important;
 
     .footer-name {
         font-size: 30px;

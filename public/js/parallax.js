@@ -5,13 +5,14 @@ window.addEventListener("scroll", (e) => {
     const workH6 = document.querySelector(".workH6");
     const footerH6 = document.querySelector(".footerH6");
 
-    let scrolled = window.scrollY;
+    let scrolled = window.scrollY*0.5;
     console.log(scrolled)
 
-    homeH6.style.transform = `translateX(${scrolled * 0.5}px)`;
-    contactH6.style.transform = `translateX(${scrolled * 0.2-300}px)`;
-    workH6.style.transform = `translateX(${-scrolled * 0.2+200}px)`;
-    footerH6.style.transform = `translateX(${scrolled * 0.2}px)`;
-
+    /*
+    homeH6.style.left = `${scrolled * 0.2}px`;
+    contactH6.style.left = `${scrolled * 0.2+300}px`;
+    workH6.style.left = `${-scrolled * 0.3+1000}px`;
+    footerH6.style.left = `${-scrolled * 0.2 + 300}px`;
+    */
   
 });

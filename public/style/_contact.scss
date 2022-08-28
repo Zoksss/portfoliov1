@@ -6,6 +6,7 @@
     box-shadow: 0 0 0 100vmax $secondary;
     clip-path: inset(0 -100vmax);
     position: relative;
+    overflow-x: hidden !important;
 
     h3 {
         font-size: 40px;

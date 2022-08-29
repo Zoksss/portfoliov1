@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 
     .footer-name {
         font-size: 30px;
@@ -55,7 +55,7 @@
     }
 
     h6{
-        left: -30vw;
+        left: -5vw;
     }
 }
 

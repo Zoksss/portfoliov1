@@ -6,7 +6,6 @@
     box-shadow: 0 0 0 100vmax $secondary;
     clip-path: inset(0 -100vmax);
     position: relative;
-    overflow-x: hidden !important;
 
     h3 {
         font-size: 40px;
@@ -31,15 +30,9 @@
             border-bottom: 1px solid $light;
 
         }
-
-    }
-
-    h6 {
-        position: absolute;
-        right: 0px;
-        bottom: 0;
-        font-size: 70px;
-        z-index: -1;
+        h6{
+            position: absolute;
+        }
     }
 
     a {

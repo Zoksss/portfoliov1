@@ -7,6 +7,7 @@ nav {
     margin-inline: auto;
     width: 100%;
     padding: 10px 35px;
+    z-index: 999999;
 }
 
 .nav-logo {
@@ -14,6 +15,7 @@ nav {
     height: 64px;
     margin-top: 10px;
     display: block;
+    cursor: pointer;
 
     img {
         width: 64px;
@@ -80,6 +82,7 @@ nav {
     line-height: 1;
     font-size: 2.375rem;
     display: none;
+    cursor: pointer;
 
     span {
         font-weight: 600;

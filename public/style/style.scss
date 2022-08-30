@@ -6,6 +6,7 @@
 @import "./_hero.scss";
 @import "./_work.scss";
 @import "./projectPage";
+@import "./transition";
 
 
 * {
@@ -164,27 +165,54 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999999999;
+    z-index: 999999999999;
     background-color: $secondary;
     animation: FadeOut 1000ms forwards 1600ms;
 
     img {
         width: 234px;
         height: 234px;
-        animation: ZTFadeOut 1000ms forwards 1500ms;
+        animation: ZTFadeOut 1000ms forwards 1600ms;
 
     }
 }
 
+.intro-transition{
+    animation: FadeIn 1000ms forwards !important;
+}
+.intro-zt-transition{
+    animation: ZTFadeIn 600ms forwards !important;
+}
+
+.z-index-fix{
+    z-index: -5;
+}
+
 @keyframes FadeOut {
-    from {
+    0% {
         opacity: 1;
     }
 
-    to {
+    99% {
+        opacity: 0;
+    }
+    100%{
         opacity: 0;
         display: none;
-        z-index: -10;
+        z-index: -5;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        display: flex;
+        opacity: 0;
+        z-index: -5;
+    }
+
+    to {
+        opacity: 1;
+        z-index: 999;
     }
 }
 
@@ -198,10 +226,20 @@ h6 {
     }
 }
 
+@keyframes ZTFadeIn {
+    from {
+        margin-top: -200px;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
 
 @media screen and (min-width: 576px) {
     h1 {
-        font-size: 80px;
+        //font-size: 80px;
     }
 
     h2 {

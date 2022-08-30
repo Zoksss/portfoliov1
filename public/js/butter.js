@@ -116,3 +116,6 @@
     root.butter = new Butter();
 
 })(this);
+
+
+butter.init({cancelOnTouch: true});

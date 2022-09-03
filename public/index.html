@@ -20,7 +20,9 @@
     -->
     <div id="butter">
         <nav>
-            <a role="button" class="nav-logo transition-fire homepage"><img src="./images/ztlogo.png" alt="zoran todorovic logo"></a>
+            <a role="button" class="nav-logo transition-fire homepage">
+                <img src="./images/ztlogo.png"
+                    alt="zoran todorovic logo"></a>
             <h1 class="nav-logo-text homepage">Zoran <span> Todorović</span></h1>
             <button class="hamburger" id="hamburger">
                 <div class="hamburger-line hamburger-line1"></div>
@@ -29,10 +31,11 @@
             </button>
             <div class="nav-open" id="navOpen" style="display: none;">
                 <ul class="nav-links">
-                    <li><a class="link-fire" href="">work</li>
-                    <li><a class="link-fire"href="">resume</li>
-                    <li><a href="">about</li>
-                    <li><a href="">contact</li>
+                    <li><a class="link-fire"href="#">home</li>
+                    <li><a id="workBtn" href="#">work</li>
+                    <li><a class="link-fire" href="#">resume</li>
+                    <!-- <li><a href="">about</li> -->
+                    <li><a href="#" id="contactBtn"> contact</li>
                     <a href="#" class="nav-social-media">
                         <li><img src="./images/youtube.png" alt="youtube"></img></li>
                     </a>
@@ -62,7 +65,7 @@
                     <h2>Frontend Developer</h2>
                     <p class="hero-desc">I am Frontend developer based in Sombor, Serbia. My main trait is making
                         minimalistic, user friendly, web apps and components.</p>
-                    <button class="cta link-fire">Let's talk</button>
+                    <a href="#contact" class="cta cta-header" id="letsTalkBtn">Let's talk</a>
                 </div>
                 <h6 class="header-bg-text scroll">home</h6>
             </header>
@@ -74,54 +77,58 @@
                 </div>
                 <div class="project-card-wrapper">
                     <div class="project-row project-row-1">
-                        <div class="work-project-card"><img src="./images/zoksmanager.png" alt="">
+                        <div class="work-project-card link-fire" onclick="setProjectId(1)">
+                            <img src="./images/zoksmanager.png" alt="">
                             <div class="work-project-card-stats">
-                                <p class="colored">[ Fullstack Project ]</p>
-                                <h4>Friend Cube</h4>
+                                <p class="colored">[ Frontend Project ]</p>
+                                <h4>Zoks Manager</h4>
                                 <div class="technologies">
                                     <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>REACT</p>
-                                    <p>JS</p>
+                                    <p>SCSS</p>
+                                    <p>REACT.JS</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="work-project-card">
+                        <div class="work-project-card link-fire" onclick="setProjectId(3)">
                             <img src="./images/quickshape.png" alt="">
                             <div class="work-project-card-stats">
                                 <p class="colored">[ Fullstack Project ]</p>
-                                <h4>Friend Cube</h4>
+                                <h4>Quickshape</h4>
                                 <div class="technologies">
                                     <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>REACT</p>
+                                    <p>SCSS</p>
                                     <p>JS</p>
+                                    <p>NODE</p>
+                                    <p>SOCKET.IO</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-row project-row-2">
-                        <div class="work-project-card"><img src="./images/friendcube2.png" alt="">
+                    <div class="project-row project-row-2" >
+                        <div class="work-project-card link-fire" onclick="setProjectId(0)">
+                            <img src="./images/friendcube2.png" alt="">
                             <div class="work-project-card-stats">
                                 <p class="colored">[ Fullstack Project ]</p>
                                 <h4>Friend Cube</h4>
                                 <div class="technologies">
                                     <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>REACT</p>
+                                    <p>SCSS</p>
                                     <p>JS</p>
+                                    <p>NODE</p>
+                                    <p>SOCKET.IO</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="work-project-card"><img src="./images/ftnformule.png" alt="">
+                        <div class="work-project-card link-fire" onclick="setProjectId(2)">
+                            <img src="./images/ftnformule.png" alt="">
                             <div class="work-project-card-stats">
-                                <p class="colored">[ Fullstack Project ]</p>
-                                <h4>Friend Cube</h4>
+                                <p class="colored">[ Frontend Project ]</p>
+                                <h4>FTN Formule</h4>
                                 <div class="technologies">
                                     <p>HTML</p>
-                                    <p>CSS</p>
+                                    <p>SCSS</p>
                                     <p>REACT</p>
-                                    <p>JS</p>
                                 </div>
                             </div>
                         </div>
@@ -129,13 +136,13 @@
                 </div>
                 <div class="more-work">
                     <h3>More work</h3>
-                    <p>You can see more of my work on my GitHub Profile.</p><a href="github">github</a>
+                    <p>You can see more of my work on my GitHub Profile.</p><a href="https://github.com/Zoksss" target="_blank">github</a>
                 </div>
                 <h6 class="workH6">work</h6>
             </div>
-            <div class="contact">
-                <h3>Get In Touch</h3><button class="cta">zorantodorovic80@gmail.com</button><a href=""
-                    class="getintouch"><img
+            <div class="contact" id="contact">
+                <h3>Get In Touch</h3><button class="cta" id="emailbtn">zorantodorovic80@gmail.com</button>
+                <a href="" class="getintouch"><img
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAiCAYAAACjv9J3AAAABHNCSVQICAgIfAhkiAAAAbpJREFUSEvtl+1RwkAQhk0FagViB1CBSQWWYKgArEDswBJCB5YQK1AqkA6UCvR9mDvmTI54l4TwJzezk8x97LP7cncbkh+1i/btQ0sL2TpJku9QN0lHqOUAnAv8GgJ2oTstIPKQNtGkG89Esn78L2sX+qbJaQiROVLoSo+l7KmyhsCzJnBrqAUJvjoCRm6vcn1AyfjLoxC/MxnXwJ2hRupSzzsP2Cv1qaHEUQMPAQVcSOa5VWIoKDyO0gsvfUHf5WtqMuG8Xx7ZWDOBt31BUzljMx2aOce5OjhSNgiuy7wXqCcrF44CKGHb9cmhkJQ1d/K9oWZDQZHYXpcjtGlrxI9VikKzvJrslq0NRbrSRzks1ZcqFPfu5WhsbXixUD5l1jIqxkJ2K/s0ffh8kGUyoLmsMCCuvU5QCjUO2PYzGWeOkkWGXOYY4wSwh2rs2WbJs02mG60j01LOVuabykIJhDGgh0yZ1xW6B1gnBkpGwFDBystVmLowZw1BhJ1TAYAt3epv+vCHrGTP5iLLqd4Jotai5PU5aNM3QlEt6rs3RuZR3rPJy2EP/QMV85Myd2KM9z9VJtZR2/nngf4CbJqPQOeP3Q4AAAAASUVORK5CYII="
                         alt="">
                     <p>resume-Zoran-Todorovic.pdf</p>
@@ -162,10 +169,11 @@
             </div>
         </div>
     </div>
+    <script src="./js/projects.js"></script>
     <script src="./js/butter.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script src="./js/navScrollTo.js"></script>
 </body>
 
 </html>

@@ -44,6 +44,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 #butter{
     &::before {
         content: "";
@@ -144,6 +148,14 @@ h6 {
     }
 }
 
+.cta-header{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
 .container {
     max-width: 1300px;
     width: 100%;
@@ -238,10 +250,7 @@ h6 {
 
 
 @media screen and (min-width: 576px) {
-    h1 {
-        //font-size: 80px;
-    }
-
+   
     h2 {
         font-size: 54px;
         margin-top: -30px;

@@ -14,7 +14,8 @@
         <img src="./images/ztlogo.png" alt="">
     </div>
     <nav>
-        <a href="#" id="homepage" class="nav-logo homepage"><img src="./images/ztlogo.png" alt="zoran todorovic logo"></a>
+        <a href="#" id="homepage" class="nav-logo homepage"><img src="./images/ztlogo.png"
+                alt="zoran todorovic logo"></a>
         <h1 class="nav-logo-text homepage">Zoran <span> Todorović</span></h1>
         <button class="hamburger" id="hamburger">
             <div class="hamburger-line hamburger-line1"></div>
@@ -23,10 +24,11 @@
         </button>
         <div class="nav-open" id="navOpen" style="display: none;">
             <ul class="nav-links">
-                <li><a class="transition-fire" href="">work</li>
-                <li><a class="transition-fire" href="">resume</li>
-                <li><a class="transition-fire" href="">about</li>
-                <li><a class="transition-fire" href="">contact</li>
+                <li><a class="homepage" id="homeBtn" href="#">home</li>
+                <li><a class="" id="workBtn" href="#">work</li>
+                <li><a class="transition-fire" href="#">resume</li>
+                <!-- <li><a class="transition-fire" href="">about</li> -->
+                <li><a class="transition-fire" id="contactBtn" href="#">contact</li>
                 <a href="#" class="nav-social-media">
                     <li><img src="./images/youtube.png" alt="youtube"></img></li>
                 </a>
@@ -45,11 +47,13 @@
         </button>
         <div class="project-page-wrapper">
             <div class="project-page-video">
+                <img src="" alt="" id="projectImage">
             </div>
             <div class="project-page-content">
-                <p class="colored p-regular hi-tag">[ Fullstack Project ]</p>
-                <h1>Friend Cube</h1>
-                <p class="project-page-desc">I am Frontend developer based in Sombor, Serbia. My main trait is
+                <p class="colored p-regular hi-tag" id="projectSubtitle">[ Fullstack Project ]</p>
+                <h1 id="projectTitle">Friend Cube</h1>
+                <p class="project-page-desc" id="projectDesc">I am Frontend developer based in Sombor, Serbia. My main
+                    trait is
                     making minimalistic, user friendly, web apps and components.
                     I am Frontend developer based in Sombor, Serbia. My main trait is
                     making minimalistic, user friendly, web apps and components.
@@ -63,8 +67,11 @@
         </div>
         <h6>project</h6>
     </div>
+    <script src="./js/projects.js"></script>
     <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script>
+        setProject();
+    </script>
 
 </body>
 

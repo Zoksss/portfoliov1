@@ -709,12 +709,6 @@ nav {
 }
 
 .project-page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 998;
   background-color: #2E3340;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,12 +719,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .project-page::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -10.5vh;
   left: 0;
   width: 40%;
   height: 100vh;
@@ -785,9 +781,13 @@ nav {
 .project-page .project-page-wrapper .project-page-video {
   max-width: 595px;
   width: 100%;
-  aspect-ratio: 2/1.7;
-  background-color: #F2F2F2;
+  aspect-ratio: 2/1.3;
   margin-top: 30px;
+}
+
+.project-page .project-page-wrapper .project-page-video img {
+  width: 100%;
+  height: 100%;
 }
 
 .project-page .project-page-wrapper .project-page-content h1 {
@@ -867,6 +867,7 @@ nav {
             align-items: center !important;
     padding: 0 50px !important;
     width: 95% !important;
+    margin-top: 100px !important;
   }
   .project-page-video {
     margin-top: 0px;
@@ -932,6 +933,10 @@ nav {
 *::selection {
   color: #222630;
   background: #F2F2F2;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #butter::before {
@@ -1033,6 +1038,14 @@ h6 {
   height: 120%;
   border-right: 2px solid #60EC43;
   border-left: 2px solid #60EC43;
+}
+
+.cta-header {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  margin-top: 40px;
 }
 
 .container {

@@ -20,7 +20,6 @@ const homeBtn = document.querySelector("#homeBtn");
 const footerWorkBtn = document.querySelector("#footerWorkBtn");
 const footerResumeBtn = document.querySelector("#footerResumeBtn");
 const footerAboutBtn = document.querySelector("#footerAboutBtn");
-const footerContactBtn = document.querySelector("#footerContactBtn");
 
 
 const contact = document.querySelector("#contact");
@@ -31,6 +30,15 @@ const setProjectId = (n) => {
     localStorage.setItem('projectId', n);
 }
 
+
+footerWorkBtn && footerWorkBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 700,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
 letsTalkBtn && letsTalkBtn.addEventListener("click", () => {
     window.scroll({
         top: contact.getBoundingClientRect().top - 200,
@@ -38,6 +46,8 @@ letsTalkBtn && letsTalkBtn.addEventListener("click", () => {
         behavior: 'smooth'
     });
 })
+
+
 
 workBtn && workBtn.addEventListener("click", () => {
     if (document.URL.includes("index.html")) {
@@ -48,7 +58,7 @@ workBtn && workBtn.addEventListener("click", () => {
             navOpen.classList.remove("nav-close-anim");
 
             window.scroll({
-                top: document.querySelector(".work-section").getBoundingClientRect().top - 200,
+                top: document.querySelector(".work-section").getBoundingClientRect().top - 1000,
                 left: 0,
                 behavior: 'smooth'
             });
@@ -145,8 +155,6 @@ homepage.forEach((homeBtn) => {
 
 
 const setProject = () => {
-    console.log('testaesatt')
-    console.log(projectId);
     let currProjectObj = projects[projectId];
     console.log(projects);
     console.log(currProjectObj);

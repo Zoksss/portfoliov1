@@ -335,7 +335,6 @@ nav {
 }
 
 .footer {
-  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +345,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: hidden !important;
 }
 
 .footer .footer-name {
@@ -413,6 +411,9 @@ nav {
 }
 
 @media screen and (min-width: 576px) {
+  .footer {
+    padding: 10px 0;
+  }
   .footer .footer-name {
     font-size: 40px;
   }

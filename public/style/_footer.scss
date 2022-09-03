@@ -1,10 +1,8 @@
 
 .footer {
-    padding: 50px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-y: hidden !important;
 
     .footer-name {
         font-size: 30px;
@@ -61,6 +59,7 @@
 
 @media screen and (min-width: 576px) {
     .footer{
+        padding: 10px 0;
         .footer-name{
             font-size: 40px;
         }

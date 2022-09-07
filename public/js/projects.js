@@ -12,24 +12,32 @@ const projects = [
         Customizable User Interface
         It's responsive and works on all devices.
         `,
-        img: "./images/friendcube2.png"
+        img: "./images/friendcube2.png",
+        github: "https://github.com/Zoksss/friend-cube",
+        website: "https://friend-cube.herokuapp.com/"
     },
     {
         name: "Zoks Manager",
         subtitle: "[ Frontend Project ]",
-        description: "I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components. I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components.",
-        img: "./images/zoksmanager.png"
+        description: "Zoks Project manager is a simple manager for managing multiple projects. It has all neccasery features, including project dashboard, todo lists, task counter, date, delete projects, finish projects and more. It is build with React along with React.Spring for animations. SCSS is used for compact styling.",
+        img: "./images/zoksmanager.png",
+        github: "https://github.com/Zoksss/zoksprojectmanager",
+        website: "https://zoksss.github.io/zoksprojectmanager/"
     },
     {
         name: "FTN Formule",
         subtitle: "[ Frontend Project ]",
-        description: "I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components. I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components.",
-        img: "./images/ftnformule.png"
+        description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University. It is build with React along with React.Spring for animations. SCSS is used for compact styling. ",
+        img: "./images/ftnformule.png",
+        github: "https://github.com/Zoksss/ftn-formule",
+        website: "https://zoksss.github.io/ftn-formule/"
     },
     {
         name: "Quickshape",
         subtitle: "[ Fullstack Project ]",
-        description: "I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components. I am Frontend developer based in Sombor, Serbia. My main trait is making minimalistic, user friendly, web apps and components.",
-        img: "./images/quickshape.png"
+        description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
+        img: "./images/quickshape.png",
+        github: "https://github.com/Zoksss/quickshape",
+        website: "https://quickshape.onrender.com"
     }
 ]

@@ -21,6 +21,9 @@ const footerWorkBtn = document.querySelector("#footerWorkBtn");
 const footerResumeBtn = document.querySelector("#footerResumeBtn");
 const footerAboutBtn = document.querySelector("#footerAboutBtn");
 
+const liveWebsiteBtn = document.querySelector("#liveWebsiteBtn");
+const githubBtn = document.querySelector("#githubBtn");
+
 
 const contact = document.querySelector("#contact");
 
@@ -29,6 +32,24 @@ let projectId = localStorage.getItem('projectId') || 0;
 const setProjectId = (n) => {
     localStorage.setItem('projectId', n);
 }
+
+let liveWebLink = "";
+let githubLink = "";
+
+
+liveWebsiteBtn && liveWebsiteBtn.addEventListener("click", () => {
+    window.open(
+        liveWebLink,
+        "_blank"
+    )
+})
+
+githubBtn && githubBtn.addEventListener("click", () => {
+    window.open(
+        githubLink,
+        "_blank"
+    )
+})
 
 
 footerWorkBtn && footerWorkBtn.addEventListener("click", () => {
@@ -162,5 +183,7 @@ const setProject = () => {
     projectImage.src = currProjectObj.img;
     projectSubtitle.innerHTML = currProjectObj.subtitle;
     projectTitle.innerHTML = currProjectObj.name;
+    liveWebLink = currProjectObj.website;
+    githubLink = currProjectObj.github;
 }
 

@@ -190,6 +190,10 @@ nav {
   display: block;
 }
 
+.nav-open .nav-links .nav-social-media:hover {
+  margin-right: 0 !important;
+}
+
 .nav-open .nav-links .nav-social-media li {
   margin-bottom: -10px;
 }
@@ -211,9 +215,6 @@ nav {
     display: block;
   }
   .nav-logo {
-    display: none;
-  }
-  .nav-social-media {
     display: none;
   }
 }

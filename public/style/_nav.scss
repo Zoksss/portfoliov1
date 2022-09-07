@@ -117,6 +117,9 @@ nav {
 
         .nav-social-media {
             display: block;
+            &:hover{
+                margin-right: 0 !important;
+            }
 
             li {
                 margin-bottom: -10px;
@@ -142,10 +145,6 @@ nav {
     }
 
     .nav-logo {
-        display: none;
-    }
-
-    .nav-social-media {
         display: none;
     }
 }

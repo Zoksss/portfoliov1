@@ -23,6 +23,7 @@ const footerAboutBtn = document.querySelector("#footerAboutBtn");
 
 const liveWebsiteBtn = document.querySelector("#liveWebsiteBtn");
 const githubBtn = document.querySelector("#githubBtn");
+const videoDiv = document.querySelector("#videoDiv");
 
 
 const contact = document.querySelector("#contact");
@@ -35,6 +36,7 @@ const setProjectId = (n) => {
 
 let liveWebLink = "";
 let githubLink = "";
+let videoLink = "";
 
 
 liveWebsiteBtn && liveWebsiteBtn.addEventListener("click", () => {
@@ -47,6 +49,13 @@ liveWebsiteBtn && liveWebsiteBtn.addEventListener("click", () => {
 githubBtn && githubBtn.addEventListener("click", () => {
     window.open(
         githubLink,
+        "_blank"
+    )
+})
+
+videoDiv && videoDiv.addEventListener("click", () => {
+    window.open(
+        videoLink,
         "_blank"
     )
 })
@@ -185,5 +194,6 @@ const setProject = () => {
     projectTitle.innerHTML = currProjectObj.name;
     liveWebLink = currProjectObj.website;
     githubLink = currProjectObj.github;
+    videoLink = currProjectObj.video;
 }
 

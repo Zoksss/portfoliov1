@@ -14,7 +14,8 @@ const projects = [
         `,
         img: "./images/friendcube2.png",
         github: "https://github.com/Zoksss/friend-cube",
-        website: "https://friend-cube.herokuapp.com/"
+        website: "https://friend-cube.herokuapp.com/",
+        video: "https://www.youtube.com/watch?v=GglIH4QvIZs"
     },
     {
         name: "Zoks Manager",
@@ -22,7 +23,8 @@ const projects = [
         description: "Zoks Project manager is a simple manager for managing multiple projects. It has all neccasery features, including project dashboard, todo lists, task counter, date, delete projects, finish projects and more. It is build with React along with React.Spring for animations. SCSS is used for compact styling.",
         img: "./images/zoksmanager.png",
         github: "https://github.com/Zoksss/zoksprojectmanager",
-        website: "https://zoksss.github.io/zoksprojectmanager/"
+        website: "https://zoksss.github.io/zoksprojectmanager/",
+        video: "https://www.youtube.com/watch?v=WEThR75MYAg"
     },
     {
         name: "FTN Formule",
@@ -30,7 +32,8 @@ const projects = [
         description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University. It is build with React along with React.Spring for animations. SCSS is used for compact styling. ",
         img: "./images/ftnformule.png",
         github: "https://github.com/Zoksss/ftn-formule",
-        website: "https://zoksss.github.io/ftn-formule/"
+        website: "https://zoksss.github.io/ftn-formule/",
+        video: "https://www.youtube.com/watch?v=mh8G05CHJTk"
     },
     {
         name: "Quickshape",
@@ -38,6 +41,7 @@ const projects = [
         description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
         img: "./images/quickshape.png",
         github: "https://github.com/Zoksss/quickshape",
-        website: "https://quickshape.onrender.com"
+        website: "https://quickshape.onrender.com",
+        video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
     }
 ]

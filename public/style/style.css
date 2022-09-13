@@ -335,6 +335,86 @@ nav {
   }
 }
 
+.cv-languange-select {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2e3340a5;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999999999;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-languange-select .cv-languange-select-container {
+  background-color: #222630;
+  padding: 20px;
+  height: 250px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-languange-select .cv-languange-select-container h3 {
+  font-size: 30px;
+}
+
+.cv-languange-select .cv-languange-select-container .cv-languange-select-container-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.cv-languange-select .cv-languange-select-container .cv-languange-select-container-btns button {
+  background-color: #2E3340;
+  width: 130px;
+  height: 100px;
+  border: none;
+  outline: none;
+  margin: 0 7px;
+  color: #F2F2F2;
+  -webkit-transition: 200ms all ease;
+  transition: 200ms all ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.cv-languange-select .cv-languange-select-container .cv-languange-select-container-btns button img {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.cv-languange-select .cv-languange-select-container .cv-languange-select-container-btns button:hover {
+  background-color: #4c556c;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,7 +694,7 @@ nav {
 
 .work-section h6 {
   position: absolute;
-  bottom: 0px;
+  bottom: 150px;
   right: 40%;
   font-size: 120px;
   z-index: -1;
@@ -1265,7 +1345,7 @@ header {
   display: none;
   position: absolute;
   right: 35px;
-  top: 55vh;
+  top: 60vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1287,7 +1367,7 @@ header {
   height: 100px;
   width: 3px;
   background-color: #F2F2F2;
-  margin: 20px 0;
+  margin: 5px 0;
   margin-right: 15px;
 }
 
@@ -1301,9 +1381,9 @@ header {
 }
 
 .side-social-icons img {
-  width: 35px;
-  height: 35px;
-  margin: 20px 0;
+  width: 30px;
+  height: 30px;
+  margin: 15px 0;
   -webkit-transition: 200ms all ease;
   transition: 200ms all ease;
 }

@@ -2,6 +2,9 @@ const navOpen = document.querySelector("#navOpen");
 const hamburger = document.querySelector("#hamburger");
 const intro = document.querySelectorAll(".intro");
 
+const cvSelect = document.querySelector("#cvSelect");
+const cvDownloadBtn = document.querySelector("#cvDownloadBtn");
+
 const transitionFire = document.querySelectorAll(".link-fire");
 const homepage = document.querySelectorAll(".homepage");
 
@@ -38,6 +41,15 @@ let liveWebLink = "";
 let githubLink = "";
 let videoLink = "";
 
+
+cvDownloadBtn.addEventListener("click", () => {
+    cvSelect.style.display = "flex";
+});
+cvSelect.addEventListener("click", (e) => {
+    if (e.target !== cvSelect) return;
+    cvSelect.style.display = "none";
+
+})
 
 liveWebsiteBtn && liveWebsiteBtn.addEventListener("click", () => {
     window.open(
@@ -196,4 +208,3 @@ const setProject = () => {
     githubLink = currProjectObj.github;
     videoLink = currProjectObj.video;
 }
-

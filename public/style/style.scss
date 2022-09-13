@@ -305,7 +305,7 @@ header {
     display: none;
     position: absolute;
     right: 35px;
-    top: 55vh;
+    top: 60vh;
     flex-direction: column;
     width: 100%;
     max-width: 1920px;
@@ -321,7 +321,7 @@ header {
         height: 100px;
         width: 3px;
         background-color: $light;
-        margin: 20px 0;
+        margin: 5px 0;
         margin-right: 15px;
     }
 
@@ -334,9 +334,9 @@ header {
     }
 
     img {
-        width: 35px;
-        height: 35px;
-        margin: 20px 0;
+        width: 30px;
+        height: 30px;
+        margin: 15px 0;
         transition: $transition;
 
         &:hover {

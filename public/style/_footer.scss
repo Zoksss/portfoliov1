@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
 
     .footer-name {
         font-size: 30px;
@@ -18,7 +19,7 @@
         margin-top: 60px;
 
         a {
-            margin: 0 30px;
+            margin: 0 20px;
 
             img {
                 width: 30px;
@@ -57,9 +58,11 @@
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     .footer{
-        padding: 10px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         .footer-name{
             font-size: 40px;
         }

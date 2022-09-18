@@ -29,7 +29,7 @@ const projects = [
     {
         name: "FTN Formule",
         subtitle: "[ Frontend Project ]",
-        description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University. It is build with React along with React.Spring for animations. SCSS is used for compact styling. ",
+        description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University in Novi Sad, Serbia. It is build with React along with React.Spring for animations. SCSS is used for compact styling. ",
         img: "./images/ftnformule.png",
         github: "https://github.com/Zoksss/ftn-formule",
         website: "https://zoksss.github.io/ftn-formule/",

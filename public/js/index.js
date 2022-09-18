@@ -156,7 +156,7 @@ transitionFire.forEach(transitionEelemnt => {
             introEl.children[0].classList.add("intro-zt-transition");
         })
         setTimeout(() => {
-            window.location.href = "http://127.0.0.1:5500/public/project.html"
+            window.location.href = "https://zoksss.github.io/portfoliov1/public/project.html"
             intro.forEach((introEl) => {
                 introEl.classList.remove("intro-transition");
                 introEl.children[0].classList.remove("intro-zt-transition");
@@ -175,7 +175,7 @@ homepage.forEach((homeBtn) => {
             introEl.children[0].classList.add("intro-zt-transition");
         })
         setTimeout(() => {
-            window.location.href = "http://127.0.0.1:5500/public/index.html"
+            window.location.href = "https://zoksss.github.io/portfoliov1/public/"
             intro.forEach((introEl) => {
                 introEl.classList.remove("intro-transition");
                 introEl.children[0].classList.remove("intro-zt-transition");

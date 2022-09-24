@@ -205,6 +205,10 @@ nav {
   transition: 200ms all ease;
 }
 
+.nav-open .nav-links a img {
+  width: 36px;
+}
+
 .nav-open .nav-links a:hover {
   color: #60EC43;
   margin-right: 30px;
@@ -216,6 +220,9 @@ nav {
   }
   .nav-logo {
     display: none;
+  }
+  .nav-social-media {
+    display: none !important;
   }
 }
 
@@ -394,7 +401,7 @@ nav {
 }
 
 .footer ul li a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #F2F2F2;
   -webkit-transition: 200ms all ease;
   transition: 200ms all ease;
@@ -493,7 +500,7 @@ nav {
   }
   .hero .hero-desc {
     font-size: 20px;
-    max-width: 70%;
+    max-width: 69%;
   }
 }
 

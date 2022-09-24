@@ -131,6 +131,10 @@ nav {
             color: $light;
             transition: $transition;
 
+            img{
+                width: 36px;
+            }
+
             &:hover {
                 color: $accent;
                 margin-right: 30px;
@@ -146,6 +150,9 @@ nav {
 
     .nav-logo {
         display: none;
+    }
+    .nav-social-media{
+        display: none !important;
     }
 }
 

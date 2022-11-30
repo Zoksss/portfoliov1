@@ -14,20 +14,42 @@
 
     h1 {
         font-size: 2.31rem;
+        z-index: 50 !important;
+        width: fit-content;
+        
     }
 
     h2 {
         font-size: 1.31rem;
         margin-top: -5px;
+        z-index: 50 !important;
+
     }
 
     .hero-desc {
         margin-top: 20px;
         max-width: 600px;
+        z-index: 20;
     }
 
     button {
         margin-top: 40px;
+    }
+}
+
+.header-profile-image{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 250px;
+    background-color: blue;
+    z-index: 1150;
+    img{
+        width: 100%;
+        height: 100%;
+
     }
 }
 
@@ -67,7 +89,6 @@
         .hero-desc {
             font-size: 20px;
             max-width: 69%;
-
         }
 
     }

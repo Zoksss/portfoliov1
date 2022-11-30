@@ -201,3 +201,30 @@ const setProject = () => {
     githubLink = currProjectObj.github;
     videoLink = currProjectObj.video;
 }
+
+
+
+
+
+
+document.addEventListener('mousemove', function (e) {
+    const circle = document.querySelector(".header-profile-image");
+    const cursor = document.querySelector(".cursor-outer");
+    circle.style.left = e.clientX + 20 + "px";
+    circle.style.top = e.clientY + 50 + "px";
+    cursor.style.left = e.clientX - 20 + "px";
+    cursor.style.top = e.clientY - 20 + "px";
+    cursor.style.mixBlendMode = "difference"
+    if(document.elementFromPoint(e.clientX, e.clientY).innerHTML === "Zoran Todorović,"){
+        circle.style.display = "flex";
+        cursor.style.backgroundColor = "#fff"
+        cursor.style.transform = "scale(1.4)"
+    }else{
+        circle.style.display = "none";
+        cursor.style.backgroundColor = "transparent"
+        cursor.style.transform = "scale(1)"
+
+
+    }
+});
+

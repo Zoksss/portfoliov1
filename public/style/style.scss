@@ -46,9 +46,9 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
-#butter{
+#butter {
     &::before {
         content: "";
         position: absolute;
@@ -60,6 +60,8 @@ html {
         z-index: -1;
     }
 }
+
+
 
 body {
     background-color: $primary;
@@ -148,7 +150,7 @@ h6 {
     }
 }
 
-.cta-header{
+.cta-header {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -189,15 +191,38 @@ h6 {
     }
 }
 
-.intro-transition{
+.intro-transition {
     animation: FadeIn 1000ms forwards !important;
 }
-.intro-zt-transition{
+
+.intro-zt-transition {
     animation: ZTFadeIn 600ms forwards !important;
 }
 
-.z-index-fix{
+.z-index-fix {
     z-index: -5;
+}
+
+
+[class^="cursor"]{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+.cursor-outer{
+    width: 50px;
+    height: 50px;
+    transition: all 200ms ease-out;
+}
+.content:hover ~ .cursor-outer{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    mix-blend-mode: difference;
 }
 
 @keyframes FadeOut {
@@ -208,7 +233,8 @@ h6 {
     99% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
         z-index: -5;
@@ -249,8 +275,10 @@ h6 {
 }
 
 
+
+
 @media screen and (min-width: 576px) {
-   
+
     h2 {
         font-size: 54px;
         margin-top: -30px;
@@ -271,7 +299,7 @@ h6 {
         padding: 15px 30px;
     }
 
-    #butter{
+    #butter {
         &::before {
             content: "";
             position: absolute;

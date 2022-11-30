@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Zoran Todorović | Home</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 </head>
 
 <body>
+    <div class="cursor-outer"></div>
+
+    <div class="header-profile-image">
+        <img src="./images/test.png" alt="profile pic">
+    </div>
     <div class="intro">
         <img src="./images/ztlogo.png" alt="">
     </div>
@@ -64,7 +70,7 @@
             <header>
                 <div class="hero">
                     <p class="colored p-regular hi-tag">[ Hi, I am ]</p>
-                    <h1 id="test">Zoran Todorović,</h1>
+                    <h1 id="test" class="content">Zoran Todorović,</h1>
                     <h2>Frontend Developer</h2>
                     <p class="hero-desc">I am Frontend developer based in Sombor, Serbia. My main goal is making scalable, minimal and user-frendly components and web apps for you.</p><a href="#contact"
                         class="cta cta-header" id="letsTalkBtn">Let's talk</a>
@@ -162,9 +168,9 @@
         </div>
     </div>
     <script src="./js/projects.js"></script>
-    <script src="./js/butter.js"></script>
+    <!-- <script src="./js/butter.js"></script> -->
     <script src="./js/parallax.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
     <script src="./js/navScrollTo.js"></script>
 </body>
 

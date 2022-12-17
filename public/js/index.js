@@ -215,7 +215,7 @@ document.addEventListener('mousemove', function (e) {
     cursor.style.left = e.clientX - 20 + "px";
     cursor.style.top = e.clientY - 20 + "px";
     cursor.style.mixBlendMode = "difference"
-    if(document.elementFromPoint(e.clientX, e.clientY).innerHTML === "Zoran Todorović,"){
+    if(document.elementFromPoint(e.clientX, e.clientY) && document.elementFromPoint(e.clientX, e.clientY).innerHTML === "Zoran Todorović,"){
         circle.style.display = "flex";
         cursor.style.backgroundColor = "#fff"
         cursor.style.transform = "scale(1.4)"

@@ -147,12 +147,14 @@
             </div>
             <div class="contact" id="contact">
                 <h3>Get In Touch</h3>
-                <form action="" class="contact-form">
+                <form action="https://formspree.io/f/xyyagezk" method="POST" class="contact-form">
                     <div class="form-row">
-                        <input type="text" id="name" name="zoran-form-name" class="form-row-input" placeholder="Name"><br>
-                        <input type="email" id="email" name="zoran-form-email" class="form-row-input" placeholder="Email">
+                        <input type="text" id="name" name="name" class="form-row-input"
+                            placeholder="Name" minlength="4"><br>
+                        <input type="email" id="email" name="email" class="form-row-input"
+                            placeholder="Email">
                     </div>
-                    <textarea id="message" name="zoran-form-message" placeholder="Message"></textarea><br>
+                    <textarea id="message" name="message" placeholder="Message" minlength="50"></textarea><br>
                     <input type="submit" value="Send Message" name="" id="submit" class="cta">
                 </form>
                 <a href="#" class="getintouch" id="cvDownloadBtn" onclick="return false;">

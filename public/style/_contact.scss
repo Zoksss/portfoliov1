@@ -25,12 +25,13 @@
 
         .form-row {
             display: flex;
-            margin-bottom: 35px;
+            flex-direction: column;
+            margin-bottom: 23px;
             justify-content: space-between;
             width: 100%;
 
             .form-row-input {
-                width: 47.5%;
+                width: 100%;
             }
         }
 
@@ -158,6 +159,16 @@
 
         h6 {
             font-size: 140px;
+        }
+        .form-row {
+            flex-direction: row !important;
+            width: 100% !important;
+            margin-bottom: 4.5% !important;
+
+
+            .form-row-input {
+                width: 47.5% !important;
+            }
         }
     }
 }

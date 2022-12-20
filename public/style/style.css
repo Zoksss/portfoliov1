@@ -331,7 +331,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 23px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -339,7 +343,7 @@ nav {
 }
 
 .contact .contact-form .form-row .form-row-input {
-  width: 47.5%;
+  width: 100%;
 }
 
 .contact .contact-form #message {
@@ -479,6 +483,17 @@ nav {
   }
   .contact h6 {
     font-size: 140px;
+  }
+  .contact .form-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    width: 100% !important;
+    margin-bottom: 4.5% !important;
+  }
+  .contact .form-row .form-row-input {
+    width: 47.5% !important;
   }
 }
 

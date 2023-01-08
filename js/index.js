@@ -26,9 +26,9 @@ const liveWebsiteBtn = document.querySelector("#liveWebsiteBtn");
 const githubBtn = document.querySelector("#githubBtn");
 const videoDiv = document.querySelector("#videoDiv");
 
-const url = "https://zoksss.github.io/portfoliov1/public/"
-// https://zoksss.github.io/portfoliov1/public
-// http://127.0.0.1:5500/public/
+const url = "https://todoroviczoran.com"
+// https://todoroviczoran.com
+// http://127.0.0.1:5500
 
 const contact = document.querySelector("#contact");
 

@@ -1,21 +1,13 @@
 const projects = [
     {
-        name: "Friend Cube",
-        subtitle: "[ Fullstack Project ]",
-        description: `Friend Cube is multiplayer times for solving Rubik's cubes.
-        <br>
-        Since there was no proper timer for multiple people solving, I decided to make one myself.
-        Friend Cube has all the necessary features including:
-        <br>
-        All players have times, averages, and other info from other players in the room.
-        All players have the same randomly generated scramble.
-        Customizable User Interface
-        It's responsive and works on all devices.
+        name: "Boja D.O.O Concept",
+        subtitle: "[ Webflow Project ]",
+        description: `This is conecept website for Boja d.o.o company which is leader in traffic signalisation in Serbia.
         `,
-        img: "./images/friendcube2.png",
-        github: "https://github.com/Zoksss/friend-cube",
-        website: "https://friend-cube.herokuapp.com/",
-        video: "https://www.youtube.com/watch?v=GglIH4QvIZs"
+        img: "./images/bojalanding.png",
+        github: "https://github.com/Zoksss/",
+        website: "https://boja.webflow.io/",
+        video: "https://www.youtube.com/@zorantodorovic5771"
     },
     {
         name: "Zoks Manager",
@@ -45,3 +37,26 @@ const projects = [
         video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
     }
 ]
+
+/*
+
+{
+        name: "Friend Cube",
+        subtitle: "[ Fullstack Project ]",
+        description: `Friend Cube is multiplayer times for solving Rubik's cubes.
+        <br>
+        Since there was no proper timer for multiple people solving, I decided to make one myself.
+        Friend Cube has all the necessary features including:
+        <br>
+        All players have times, averages, and other info from other players in the room.
+        All players have the same randomly generated scramble.
+        Customizable User Interface
+        It's responsive and works on all devices.
+        `,
+        img: "./images/friendcube2.png",
+        github: "https://github.com/Zoksss/friend-cube",
+        website: "https://friend-cube.herokuapp.com/",
+        video: "https://www.youtube.com/watch?v=GglIH4QvIZs"
+    },
+
+*/

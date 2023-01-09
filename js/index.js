@@ -216,8 +216,16 @@ document.addEventListener('mousemove', function (e) {
     circle.style.top = e.clientY + 50 + "px";
 
     
-    circle2.style.left = e.clientX + 120 + "px";
-    circle2.style.top = e.clientY + 550 + "px";
+    let h = document.documentElement, 
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
+
+    let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+
+
+    circle2.style.left = e.clientX + 100 + "px";
+    circle2.style.top = e.clientY + percent*16 + "px";
 
     cursor.style.left = e.clientX - 20 + "px";
     cursor.style.top = e.clientY - 20 + "px";

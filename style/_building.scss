@@ -1,0 +1,165 @@
+.building-body {
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    background: white !important;
+    .building-nav-logo {
+        img {
+            width: 75px;
+        }
+    }
+    .building-discord-nav {
+        text-decoration: none;
+        color: $primary;
+        font-size: 18px;
+    }
+    .building-discord-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .building-discord-logo {
+        margin-right: 7px;
+    }
+
+    .building-projects {
+        margin-top: 20px;
+        .building-projects-title {
+            color: $primary;
+            font-weight: 400;
+            font-size: 30pt;
+            position: relative;
+            display: inline;
+            &::before {
+                content: "9";
+                font-size: 25px;
+                font-weight: 500;
+                color: #30b6d3;
+                position: absolute;
+                right: -20px;
+                top: 0;
+            }
+        }
+        .building-projects-underline {
+            height: 2px;
+            width: 100%;
+            background-color: $light;
+            margin-top: 10px;
+        }
+
+        .builds {
+            display: flex;
+            width: 100%;
+            margin-top: 40px;
+            .build-card {
+                width: 350px;
+                height: 250px;
+                background-color: gray;
+                margin: 15px;
+                position: relative;
+                transition: $transition;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                }
+
+                .build-stats {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 2;
+                    background-color: $primary;
+                    padding: 6px 20px;
+                    width: 60%;
+                    transition: $transition;
+
+                    .build-subititle {
+                        color: #30b6d3;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                    .build-title {
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    .build-images-num {
+                        color: rgb(169, 169, 169);
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+                &:hover {
+                    transform: scale(1.05);
+                    .build-stats {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#galeryOverlay {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    padding: 50px 350px 50px 350px;
+    
+    .galery-title{
+        color: $primary;
+        margin: 20px 0 20px 0;
+    }
+
+    .galery-underline {
+        height: 2px;
+        width: 100%;
+        background-color: $light;
+        margin-bottom: 60px;
+    }
+
+    .galery-top-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        button{
+            outline: none;
+            border: none;
+            border: none;
+            width: 150px;
+            height: 50px;
+            font-weight: 500;
+            color: white;
+            background-color: #30b6d3;
+            transition: $transition;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+
+
+    .galery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        .galery-image {
+            width: 50%;
+            padding: 20px;
+            flex: 1 0 100px; /* explanation below */
+        }
+    }
+}

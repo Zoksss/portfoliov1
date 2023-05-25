@@ -1,3 +1,6 @@
+const goBackBtn = document.querySelector("#galeryGoBack");
+const galeryOverlay = document.querySelector("#galeryOverlay");
+
 const imageArray = [
     [
         "./images/map0/map0_1.png",
@@ -18,5 +21,30 @@ const imageArray = [
 const loadBuildImages = (num) => {
     let currArray = imageArray[num];
     console.log(currArray);
-    
+
+    goBackBtn.click();
+
 }
+
+goBackBtn.addEventListener("click", () => {
+    
+    if (galeryOverlay.style.display === "flex")
+        galeryOverlay.style.display = "none"
+    else
+        galeryOverlay.style.display = "flex"
+})
+
+
+/*
+intro.forEach((introEl) => {
+    introEl.classList.add('intro-transition');
+    introEl.children[0].classList.add("intro-zt-transition");
+})
+setTimeout(() => {
+    window.location.href = url
+    intro.forEach((introEl) => {
+        introEl.classList.remove("intro-transition");
+        introEl.children[0].classList.remove("intro-zt-transition");
+    });
+}, 950)
+*/

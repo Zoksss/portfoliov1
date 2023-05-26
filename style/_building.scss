@@ -38,7 +38,7 @@
             position: relative;
             display: inline;
             &::before {
-                content: "9";
+                content: "7";
                 font-size: 25px;
                 font-weight: 500;
                 color: #30b6d3;
@@ -163,9 +163,11 @@
         padding-bottom: 50px;
         justify-content: center;
         align-items: center;
+        background-color: white;
         .galery-image {
             width: 650px;
             padding: 20px;
+            background-color: white;
         }
     }
 }

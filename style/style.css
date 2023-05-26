@@ -805,7 +805,7 @@ nav {
   display: inline;
 }
 .building-body .building-projects .building-projects-title::before {
-  content: "9";
+  content: "7";
   font-size: 25px;
   font-weight: 500;
   color: #30b6d3;
@@ -918,10 +918,12 @@ nav {
   padding-bottom: 50px;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 #galeryOverlay .galery-grid .galery-image {
   width: 650px;
   padding: 20px;
+  background-color: white;
 }
 
 @media only screen and (max-width: 976px) {

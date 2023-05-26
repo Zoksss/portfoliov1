@@ -203,10 +203,6 @@ const setProject = () => {
 }
 
 
-
-
-
-
 document.addEventListener('mousemove', function (e) {
     const circle = document.querySelector(".header-profile-image");
     const circle2 = document.querySelector(".work-work-image");

@@ -81,6 +81,17 @@ const imageArray = [
         "./images/map6/map6_5.png",
         "./images/map6/map6_6.png",
         "./images/map6/map6_7.png",
+    ],
+    [
+        "./images/map7/map7_1.png",
+        "./images/map7/map7_2.png",
+        "./images/map7/map7_3.png",
+        "./images/map7/map7_4.png",
+        "./images/map7/map7_5.png",
+        "./images/map7/map7_6.png",
+        "./images/map7/map7_7.png",
+        "./images/map7/map7_8.png",
+        "./images/map7/map7_9.png",
     ]
 ]
 

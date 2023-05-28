@@ -796,6 +796,7 @@ nav {
 }
 .building-body .building-projects {
   margin-top: 20px;
+  padding-bottom: 50px;
 }
 .building-body .building-projects .building-projects-title {
   color: #2E3340;
@@ -805,7 +806,7 @@ nav {
   display: inline;
 }
 .building-body .building-projects .building-projects-title::before {
-  content: "7";
+  content: "8";
   font-size: 25px;
   font-weight: 500;
   color: #30b6d3;

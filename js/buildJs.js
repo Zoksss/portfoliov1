@@ -7,7 +7,7 @@ const galeryTitle = document.querySelector("#galeryTitle");
 
 const intro2 = document.querySelector(".intro2");
 
-const nameArray = ["Fishing Tycoon Map", "Toy Tycoon Map", "Rooftop", "Monster Map", "Pirate Dock", "Alchemist", "Ultimate Race"];
+const nameArray = ["Fishing Tycoon Map", "Toy Tycoon Map", "Rooftop", "Monster Map", "Pirate Dock", "Alchemist", "Ultimate Race", "Trash City"];
 const imageArray = [
     [
         "./images/map0/map0_1.png",

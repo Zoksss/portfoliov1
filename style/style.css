@@ -825,6 +825,7 @@ nav {
   width: 100%;
   margin-top: 40px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .building-body .building-projects .builds .build-card {
   width: 380px;
@@ -875,6 +876,7 @@ nav {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
+  max-width: 100vw;
   top: 0;
   left: 0;
   background-color: white;
@@ -922,7 +924,8 @@ nav {
   background-color: white;
 }
 #galeryOverlay .galery-grid .galery-image {
-  width: 650px;
+  max-width: 650px;
+  width: 100%;
   padding: 20px;
   background-color: white;
 }
@@ -934,6 +937,24 @@ nav {
   .galery-image {
     width: 90%;
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .building-body .container {
+    padding: 0 10px !important;
+  }
+  .intro2 img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+@media only screen and (max-width: 472px) {
+  .building-body .galery-title {
+    font-size: 30px;
+  }
+  .building-body .galery-image {
+    width: 100%;
+    padding: 5px 0 !important;
   }
 }
 * {

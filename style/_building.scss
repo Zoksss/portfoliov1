@@ -60,6 +60,7 @@
             width: 100%;
             margin-top: 40px;
             flex-wrap: wrap;
+            justify-content: center;
             .build-card {
                 width: 380px;
                 height: 240px;
@@ -115,6 +116,7 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
+    max-width: 100vw;
     top: 0;
     left: 0;
     background-color: white;
@@ -166,7 +168,8 @@
         align-items: center;
         background-color: white;
         .galery-image {
-            width: 650px;
+            max-width: 650px;
+            width: 100%;
             padding: 20px;
             background-color: white;
         }
@@ -182,3 +185,34 @@
         padding: 20px;
     }
 }
+
+@media only screen and (max-width: 512px) {
+    .building-body{
+        .container{
+            padding: 0 10px !important;
+        }
+    }
+
+    .intro2{
+        img{
+            width: 120px !important;
+            height: 120px !important;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 472px) {
+    .building-body{
+        .galery-title{
+            font-size: 30px;
+        }
+        .galery-image {
+            width: 100%;
+            padding: 5px 0 !important;
+        }
+    }
+}
+
+
+

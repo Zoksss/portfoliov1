@@ -4,6 +4,8 @@ const galeryOverlay = document.querySelector("#galeryOverlay");
 const galeryGrid = document.querySelector("#galeryGrid");
 const galeryTitle = document.querySelector("#galeryTitle");
 
+const buildingProjectDom = document.querySelector("#buildingProjectDom");
+
 
 const intro2 = document.querySelector(".intro2");
 
@@ -115,6 +117,7 @@ const loadBuildImages = (num) => {
     intro2.children[0].classList.add("intro-zt-transition");
     setTimeout(() => {
         galeryTitle.innerHTML = `${nameArray[num]}`
+        buildingProjectDom.style.display = "none";
         for (let i = 0; i <= currArray.length; i++) {
             galeryGrid.innerHTML += `<img class="galery-image" src="${currArray[i]}" alt="">`;
         }
@@ -131,8 +134,10 @@ goBackBtn.addEventListener("click", () => {
     intro2.children[0].classList.add("intro-zt-transition");
 
     setTimeout(() => {
-        if (galeryOverlay.style.display === "flex")
+        if (galeryOverlay.style.display === "flex") {
             galeryOverlay.style.display = "none"
+            buildingProjectDom.style.display = "block";
+        }
         else
             galeryOverlay.style.display = "flex"
 

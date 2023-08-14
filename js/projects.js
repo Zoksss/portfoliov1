@@ -28,13 +28,13 @@ const projects = [
         video: "https://www.youtube.com/watch?v=mh8G05CHJTk"
     },
     {
-        name: "Quickshape",
-        subtitle: "[ Fullstack Project ]",
-        description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
-        img: "./images/quickshape.png",
-        github: "https://github.com/Zoksss/quickshape",
-        website: "https://quickshape.onrender.com",
-        video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
+        name: "FigmaLand Landing",
+        subtitle: "[ Webflow Project ]",
+        description: "Landing page using Webflow for FigmaLand, an imaginary SAAS Agency.",
+        img: "./images/figmaland.png",
+        github: "https://github.com/Zoksss/",
+        website: "https://figmaland.webflow.io/",
+        video: "https://www.youtube.com/@zorantodorovic5771"
     }
 ]
 
@@ -58,5 +58,14 @@ const projects = [
         website: "https://friend-cube.herokuapp.com/",
         video: "https://www.youtube.com/watch?v=GglIH4QvIZs"
     },
+    {
+        name: "Quickshape",
+        subtitle: "[ Fullstack Project ]",
+        description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
+        img: "./images/quickshape.png",
+        github: "https://github.com/Zoksss/quickshape",
+        website: "https://quickshape.onrender.com",
+        video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
+    }
 
 */

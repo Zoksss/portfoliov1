@@ -727,6 +727,7 @@ nav {
   position: absolute;
   bottom: 30px;
   right: 40px;
+  z-index: -1;
 }
 
 @media screen and (min-width: 960px) {
@@ -806,7 +807,7 @@ nav {
   display: inline;
 }
 .building-body .building-projects .building-projects-title::before {
-  content: "8";
+  content: "9";
   font-size: 25px;
   font-weight: 500;
   color: #30b6d3;

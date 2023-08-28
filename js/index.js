@@ -205,7 +205,7 @@ const setProject = () => {
 
 document.addEventListener('mousemove', function (e) {
     const circle = document.querySelector(".header-profile-image");
-    const circle2 = document.querySelector(".work-work-image");
+    //const circle2 = document.querySelector(".work-work-image");
 
     const cursor = document.querySelector(".cursor-outer");
     circle.style.left = e.clientX + 20 + "px";
@@ -220,8 +220,8 @@ document.addEventListener('mousemove', function (e) {
     let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 
 
-    circle2.style.left = e.clientX + 100 + "px";
-    circle2.style.top = e.clientY + percent*16 + "px";
+   // circle2.style.left = e.clientX + 100 + "px";
+    //circle2.style.top = e.clientY + percent*16 + "px";
 
     cursor.style.left = e.clientX - 20 + "px";
     cursor.style.top = e.clientY - 20 + "px";
@@ -234,14 +234,14 @@ document.addEventListener('mousemove', function (e) {
         cursor.style.transform = "scale(1.4)"
     }
     else if(document.elementFromPoint(e.clientX, e.clientY) && document.elementFromPoint(e.clientX, e.clientY).innerHTML === "Creations"){
-        circle2.style.display = "flex";
+       // circle2.style.display = "flex";
         cursor.style.backgroundColor = "#fff"
         cursor.style.transform = "scale(1.4)"
     }
 
     else{
-        circle.style.display = "none";
-        circle2.style.display = "none";
+       // circle.style.display = "none";
+       // circle2.style.display = "none";
         cursor.style.backgroundColor = "transparent"
         cursor.style.transform = "scale(1)"
 

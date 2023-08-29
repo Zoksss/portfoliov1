@@ -10,13 +10,13 @@ const projects = [
         video: "https://www.youtube.com/@zorantodorovic5771"
     },
     {
-        name: "Zoks Manager",
-        subtitle: "[ Frontend Project ]",
-        description: "Zoks Project manager is a simple manager for managing multiple projects. It has all neccasery features, including project dashboard, todo lists, task counter, date, delete projects, finish projects and more. It is build with React along with React.Spring for animations. SCSS is used for compact styling.",
-        img: "./images/zoksmanager.png",
-        github: "https://github.com/Zoksss/zoksprojectmanager",
-        website: "https://zoksss.github.io/zoksprojectmanager/",
-        video: "https://www.youtube.com/watch?v=WEThR75MYAg"
+        name: "Quickshape",
+        subtitle: "[ Fullstack Project ]",
+        description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
+        img: "./images/quickshape.png",
+        github: "https://github.com/Zoksss/quickshape",
+        website: "https://quickshape.onrender.com",
+        video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
     },
     {
         name: "FTN Formule",
@@ -67,5 +67,16 @@ const projects = [
         website: "https://quickshape.onrender.com",
         video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
     }
+
+
+    {
+        name: "Zoks Manager",
+        subtitle: "[ Frontend Project ]",
+        description: "Zoks Project manager is a simple manager for managing multiple projects. It has all neccasery features, including project dashboard, todo lists, task counter, date, delete projects, finish projects and more. It is build with React along with React.Spring for animations. SCSS is used for compact styling.",
+        img: "./images/zoksmanager.png",
+        github: "https://github.com/Zoksss/zoksprojectmanager",
+        website: "https://zoksss.github.io/zoksprojectmanager/",
+        video: "https://www.youtube.com/watch?v=WEThR75MYAg"
+    },
 
 */

@@ -240,7 +240,7 @@ document.addEventListener('mousemove', function (e) {
     }
 
     else{
-       // circle.style.display = "none";
+        circle.style.display = "none";
        // circle2.style.display = "none";
         cursor.style.backgroundColor = "transparent"
         cursor.style.transform = "scale(1)"

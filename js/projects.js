@@ -13,9 +13,9 @@ const projects = [
         name: "Quickshape",
         subtitle: "[ Fullstack Project ]",
         description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
-        img: "./images/quickshape.png",
-        github: "https://github.com/Zoksss/quickshape",
-        website: "https://quickshape.onrender.com",
+        img: "./images/quickshapess.png",
+        github: "https://github.com/Zoksss/quickshape-react",
+        website: "https://zoksss.github.io/quickshape-react/",
         video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
     },
     {

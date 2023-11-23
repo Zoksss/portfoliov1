@@ -202,7 +202,7 @@ const setProject = () => {
     videoLink = currProjectObj.video;
 }
 
-
+/*
 document.addEventListener('mousemove', function (e) {
     const circle = document.querySelector(".header-profile-image");
     //const circle2 = document.querySelector(".work-work-image");
@@ -248,3 +248,4 @@ document.addEventListener('mousemove', function (e) {
     }
 });
 
+*/

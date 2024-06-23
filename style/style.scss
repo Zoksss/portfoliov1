@@ -4,6 +4,8 @@
 @import "./_footer.scss";
 @import "./_hero.scss";
 @import "./_work.scss";
+@import "./_extraProjects.scss";
+@import "_technoliges.scss";
 @import "./projectPage";
 @import "./transition";
 @import "./building";
@@ -308,7 +310,7 @@ h6 {
             position: absolute;
             top: 0;
             left: 0;
-            width: 42%;
+            width: 60%;
             height: 100vh;
             background-color: $secondary;
             z-index: -1;

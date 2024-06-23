@@ -1,0 +1,84 @@
+.technoliges {
+    background-color: $primary;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .creations-desc {
+        width: 300px;
+    }
+    .technoliges-cover {
+        height: 100%;
+        display: flex;
+        .technoliges-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+            padding: 10px 0;
+            background-color: #3640a9;
+            height: 100%;
+            text-align: center;
+            h3 {
+                font-weight: 500;
+                font-size: 20px;
+            }
+            img {
+                height: 55px;
+            }
+
+            p {
+                color: #c0c0c0;
+                font-size: 16px;
+            }
+        }
+        .js {
+            background-color: #958a35;
+            position: relative; /* Ensure the element can have a shadow relative to itself */
+            box-shadow: 100vmax 0 0 100vmax #958a35;
+            clip-path: inset(0 -100vmax);
+        }
+        .react {
+            background-color: #30606c;
+        }
+    }
+}
+
+
+@media screen and (max-width: 976px) {
+
+    .technoliges{
+        flex-direction: column !important;
+        height: auto !important;
+        width: 100% !important;
+        padding: 50px 0;
+
+        .technoliges-cover {
+            flex-direction: column !important;
+            width: 100% !important;
+            margin-top: 35px;
+
+            .technoliges-card{
+                width: 100%;
+                height: 200px;
+                box-shadow: 0vmax 0 0 100vmax #3640a9;
+                clip-path: inset(0 -100vmax);
+                
+            }
+
+            .js {
+                background-color: #958a35;
+                position: relative; /* Ensure the element can have a shadow relative to itself */
+                box-shadow: 0vmax 0 0 100vmax #958a35;
+                clip-path: inset(0 -100vmax);
+            }
+            .react {
+                background-color: #30606c;
+                box-shadow: 0vmax 0 0 100vmax #30606c;
+                clip-path: inset(0 -100vmax);
+            }
+        }
+    }
+}
+

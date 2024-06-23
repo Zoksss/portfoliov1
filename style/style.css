@@ -172,7 +172,7 @@ nav {
           clip-path: inset(0 -100vmax);
   position: relative;
   display: flex;
-  justify-content: centere;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -362,13 +362,18 @@ nav {
     flex-direction: row !important;
   }
 }
+#butter {
+  overflow-x: hidden !important;
+}
+
 .hero {
-  height: 300px;
+  height: 500px;
   width: 100%;
   margin-top: 130px;
   text-align: left;
   max-width: 100%;
   margin-inline: auto;
+  overflow: hidden;
 }
 .hero .hi-tag {
   margin-bottom: -5px;
@@ -381,13 +386,13 @@ nav {
 }
 .hero h2 {
   font-size: 1.31rem;
-  margin-top: -5px;
   z-index: 50 !important;
 }
 .hero .hero-desc {
-  margin-top: 20px;
+  margin-top: 40px;
   max-width: 600px;
   z-index: 20;
+  line-height: 1.5;
 }
 .hero button {
   margin-top: 40px;
@@ -402,6 +407,7 @@ nav {
   height: 250px;
   background-color: blue;
   z-index: 1150;
+  overflow-x: hidden;
 }
 .header-profile-image img {
   width: 100%;
@@ -421,6 +427,7 @@ nav {
   }
   .hero .hero-desc {
     font-size: 20px;
+    max-width: 700px;
   }
 }
 @media screen and (min-width: 1204px) {
@@ -428,18 +435,23 @@ nav {
     font-size: 80px;
   }
   .hero h2 {
-    font-size: 54px;
+    font-size: 40px;
     margin-top: -20px;
+    font-weight: 400;
   }
   .hero .hero-desc {
     font-size: 20px;
-    max-width: 69%;
+    max-width: 700px;
   }
 }
+.pink {
+  color: #E160F5;
+}
+
 .work-section {
   padding: 50px 0;
   position: relative;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 .work-section .work-section-title {
   margin-bottom: 50px;
@@ -610,6 +622,140 @@ nav {
     right: 50px !important;
     font-size: 180px !important;
     z-index: -1;
+  }
+}
+.extra-projects {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #222630;
+  box-shadow: 0 0 0 100vmax #222630;
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.extra-projects .extra-projects-projects {
+  margin-top: 25px;
+  width: 100%;
+}
+.extra-projects .extra-projects-projects .extra-project-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 15px 0;
+}
+.extra-projects .extra-projects-projects .extra-project-line p {
+  font-size: 20px;
+}
+.extra-projects .extra-projects-projects .extra-project-line a {
+  color: white;
+}
+.extra-projects .extra-projects-projects .extra-project-line span {
+  color: rgb(145, 145, 145);
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 15px;
+}
+.extra-projects .extra-projects-projects .extra-project-line .pink {
+  color: #4353ff;
+}
+.extra-projects .extra-projects-projects .extra-project-line .extra-project-gh {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 976px) {
+  .extra-projects {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .extra-project-line {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+}
+.technoliges {
+  background-color: #2E3340;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.technoliges .creations-desc {
+  width: 300px;
+}
+.technoliges .technoliges-cover {
+  height: 100%;
+  display: flex;
+}
+.technoliges .technoliges-cover .technoliges-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 10px 0;
+  background-color: #3640a9;
+  height: 100%;
+  text-align: center;
+}
+.technoliges .technoliges-cover .technoliges-card h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.technoliges .technoliges-cover .technoliges-card img {
+  height: 55px;
+}
+.technoliges .technoliges-cover .technoliges-card p {
+  color: #c0c0c0;
+  font-size: 16px;
+}
+.technoliges .technoliges-cover .js {
+  background-color: #958a35;
+  position: relative; /* Ensure the element can have a shadow relative to itself */
+  box-shadow: 100vmax 0 0 100vmax #958a35;
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
+}
+.technoliges .technoliges-cover .react {
+  background-color: #30606c;
+}
+
+@media screen and (max-width: 976px) {
+  .technoliges {
+    flex-direction: column !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 50px 0;
+  }
+  .technoliges .technoliges-cover {
+    flex-direction: column !important;
+    width: 100% !important;
+    margin-top: 35px;
+  }
+  .technoliges .technoliges-cover .technoliges-card {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0vmax 0 0 100vmax #3640a9;
+    -webkit-clip-path: inset(0 -100vmax);
+            clip-path: inset(0 -100vmax);
+  }
+  .technoliges .technoliges-cover .js {
+    background-color: #958a35;
+    position: relative; /* Ensure the element can have a shadow relative to itself */
+    box-shadow: 0vmax 0 0 100vmax #958a35;
+    -webkit-clip-path: inset(0 -100vmax);
+            clip-path: inset(0 -100vmax);
+  }
+  .technoliges .technoliges-cover .react {
+    background-color: #30606c;
+    box-shadow: 0vmax 0 0 100vmax #30606c;
+    -webkit-clip-path: inset(0 -100vmax);
+            clip-path: inset(0 -100vmax);
   }
 }
 .project-page {
@@ -1008,6 +1154,7 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+  overflow-x: hidden !important;
 }
 
 h1 {
@@ -1220,7 +1367,7 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 42%;
+    width: 60%;
     height: 100vh;
     background-color: #222630;
     z-index: -1;

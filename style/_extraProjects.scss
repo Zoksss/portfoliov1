@@ -1,0 +1,55 @@
+.extra-projects {
+    width: 70%;
+    margin: 0 auto;
+    background-color: $secondary;
+    box-shadow: 0 0 0 100vmax $secondary;
+    clip-path: inset(0 -100vmax);
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .extra-projects-projects {
+        margin-top: 25px;
+        width: 100%;
+
+        .extra-project-line {
+            p {
+                font-size: 20px;
+            }
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            margin: 15px 0;
+            a {
+                color: white;
+            }
+            span {
+                color: rgb(145, 145, 145);
+                font-weight: 500;
+                font-size: 16px;
+                margin-left: 15px;
+            }
+            .pink {
+                color: #4353ff;
+            }
+            .extra-project-gh {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .extra-projects {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .extra-project-line {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+}

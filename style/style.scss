@@ -188,8 +188,8 @@ h6 {
     animation: FadeOut 1000ms forwards 1600ms;
 
     img {
-        width: 234px;
-        height: 234px;
+        width: 134px;
+        height: 134px;
         animation: ZTFadeOut 1000ms forwards 1600ms;
 
     }
@@ -314,6 +314,12 @@ h6 {
             height: 100vh;
             background-color: $secondary;
             z-index: -1;
+        }
+    }
+    .intro {
+        img {
+            width: 214px;
+            height: 214px;
         }
     }
 }

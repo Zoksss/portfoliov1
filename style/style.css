@@ -668,6 +668,7 @@ nav {
 @media screen and (max-width: 976px) {
   .extra-projects {
     width: 100% !important;
+    text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -675,15 +676,16 @@ nav {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 25px 0;
   }
 }
 .technoliges {
   background-color: #2E3340;
-  height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 350px;
+  padding: 0 15px;
 }
 .technoliges .creations-desc {
   width: 300px;
@@ -730,7 +732,13 @@ nav {
     flex-direction: column !important;
     height: auto !important;
     width: 100% !important;
-    padding: 50px 0;
+    padding: 30px 0px 0 0;
+  }
+  .technoliges .extra-project-line {
+    margin: 10px 0;
+  }
+  .technoliges .work-section-title {
+    text-align: center;
   }
   .technoliges .technoliges-cover {
     flex-direction: column !important;
@@ -1265,8 +1273,8 @@ h6 {
   animation: FadeOut 1000ms forwards 1600ms;
 }
 .intro img {
-  width: 234px;
-  height: 234px;
+  width: 134px;
+  height: 134px;
   animation: ZTFadeOut 1000ms forwards 1600ms;
 }
 
@@ -1371,6 +1379,10 @@ h6 {
     height: 100vh;
     background-color: #222630;
     z-index: -1;
+  }
+  .intro img {
+    width: 214px;
+    height: 214px;
   }
 }
 header {

@@ -11,7 +11,7 @@ const projects = [
     },
     {
         name: "Quickshape",
-        subtitle: "[ Fullstack Project ]",
+        subtitle: "[ React Project ]",
         description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
         img: "./images/quickshapess.png",
         github: "https://github.com/Zoksss/quickshape-react",
@@ -19,13 +19,22 @@ const projects = [
         video: "https://www.youtube.com/watch?v=clmq3-f6DmY"
     },
     {
-        name: "FTN Formule",
-        subtitle: "[ Frontend Project ]",
-        description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University in Novi Sad, Serbia. It is build with React along with React.Spring for animations. SCSS is used for compact styling. ",
-        img: "./images/ftnformule.png",
-        github: "https://github.com/Zoksss/ftn-formule",
-        website: "https://zoksss.github.io/ftn-formule/",
-        video: "https://www.youtube.com/watch?v=mh8G05CHJTk"
+        name: "Friend Cube",
+        subtitle: "[ React Project ]",
+        description: `Friend Cube is multiplayer times for solving Rubik's cubes.
+        <br>
+        Since there was no proper timer for multiple people solving, I decided to make one myself.
+        Friend Cube has all the necessary features including:
+        <br>
+        All players have times, averages, and other info from other players in the room.
+        All players have the same randomly generated scramble.
+        Customizable User Interface
+        It's responsive and works on all devices.
+        `,
+        img: "./images/friendcube2.png",
+        github: "https://github.com/Zoksss/friend-cube",
+        website: "https://friend-cube.herokuapp.com/",
+        video: "https://www.youtube.com/watch?v=GglIH4QvIZs"
     },
     {
         name: "FigmaLand Landing",
@@ -78,5 +87,16 @@ const projects = [
         website: "https://zoksss.github.io/zoksprojectmanager/",
         video: "https://www.youtube.com/watch?v=WEThR75MYAg"
     },
+
+
+    {
+    name: "FTN Formule",
+        subtitle: "[ Frontend Project ]",
+        description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University in Novi Sad, Serbia. It is build with React along with React.Spring for animations. SCSS is used for compact styling. ",
+        img: "./images/ftnformule.png",
+        github: "https://github.com/Zoksss/ftn-formule",
+        website: "https://zoksss.github.io/ftn-formule/",
+        video: "https://www.youtube.com/watch?v=mh8G05CHJTk"
+    }
 
 */

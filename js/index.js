@@ -27,7 +27,7 @@ const liveWebsiteBtn = document.querySelector("#liveWebsiteBtn");
 const githubBtn = document.querySelector("#githubBtn");
 const videoDiv = document.querySelector("#videoDiv");
 
-const url = "http://127.0.0.1:5500"
+const url = "https://todoroviczoran.com"
 // https://todoroviczoran.com
 // http://127.0.0.1:5500
 

@@ -624,6 +624,69 @@ nav {
     z-index: -1;
   }
 }
+.skills {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills .work-section-title {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.skills .work-section-title p {
+  width: 300px;
+}
+.skills .skills-table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-table .skills-table-col .skill-item {
+  width: 130px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-table .skills-table-col .skill-item img {
+  height: 30px;
+}
+.skills .skills-table .skills-table-col h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 896px) {
+  .skills {
+    height: auto;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0px;
+  }
+  .skills .work-section-title {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .skills-table {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .skills-table .skills-table-col {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
 .extra-projects {
   width: 70%;
   margin: 0 auto;
@@ -687,8 +750,18 @@ nav {
   height: 350px;
   padding: 0 15px;
 }
+.technoliges .skills-button {
+  text-decoration: none;
+  color: #60EC43;
+  margin-top: 15px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .technoliges .creations-desc {
   width: 300px;
+  margin-bottom: 10px;
 }
 .technoliges .technoliges-cover {
   height: 100%;

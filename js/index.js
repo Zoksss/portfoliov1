@@ -27,7 +27,7 @@ const liveWebsiteBtn = document.querySelector("#liveWebsiteBtn");
 const githubBtn = document.querySelector("#githubBtn");
 const videoDiv = document.querySelector("#videoDiv");
 
-const url = "https://todoroviczoran.com"
+const url = "http://127.0.0.1:5500"
 // https://todoroviczoran.com
 // http://127.0.0.1:5500
 
@@ -188,7 +188,7 @@ homepage.forEach((homeBtn) => {
     })
 });
 
-skillsBtn.addEventListener("click", () => {
+skillsBtn && skillsBtn.addEventListener("click", () => {
     intro.forEach((introEl) => {
         introEl.classList.add('intro-transition');
         introEl.children[0].classList.add("intro-zt-transition");

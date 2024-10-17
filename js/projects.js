@@ -21,20 +21,12 @@ const projects = [
     {
         name: "Domaci Metal Blog",
         subtitle: "[ Webflow Project ]",
-        description: `Domaci Metal Blog
-        <br>
-        Since there was no proper timer for multiple people solving, I decided to make one myself.
-        Friend Cube has all the necessary features including:
-        <br>
-        All players have times, averages, and other info from other players in the room.
-        All players have the same randomly generated scramble.
-        Customizable User Interface
-        It's responsive and works on all devices.
+        description: `Domaci Metal is blog-like website for posting guitar Tabs for guitar covers from tiktok, 
         `,
         img: "./images/domacimetal.png",
-        github: "https://github.com/Zoksss/friend-cube",
-        website: "https://friend-cube.herokuapp.com/",
-        video: "https://www.youtube.com/watch?v=GglIH4QvIZs"
+        github: "#",
+        website: "https://domacimetal.webflow.io/",
+        video: "#"
     },
     {
         name: "FigmaLand Landing",

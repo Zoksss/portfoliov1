@@ -21,7 +21,7 @@ const projects = [
     {
         name: "Domaci Metal Blog",
         subtitle: "[ Webflow Project ]",
-        description: `Domaci Metal is blog-like website for posting guitar Tabs for guitar covers from tiktok, 
+        description: `Domaci Metal is a blog-style platform showcasing guitar tabs for trending TikTok covers. 
         `,
         img: "./images/domacimetal.png",
         github: "#",

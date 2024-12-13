@@ -29,6 +29,18 @@ const projects = [
         video: "#"
     },
     {
+        name: "Team Gravity Landing",
+        subtitle: "[ Webflow Project ]",
+        description: "Landing page using Webflow for Team Gravity, an ctypto contept agency.",
+        img: "./images/teamgravity.png",
+        github: "https://github.com/Zoksss/",
+        website: "https://teamgravity.webflow.io/",
+        video: "#"
+    }
+]
+
+/*
+{
         name: "FigmaLand Landing",
         subtitle: "[ Webflow Project ]",
         description: "Landing page using Webflow for FigmaLand, an imaginary SAAS Agency.",
@@ -37,10 +49,6 @@ const projects = [
         website: "https://figmaland.webflow.io/",
         video: "https://www.youtube.com/@zorantodorovic5771"
     }
-]
-
-/*
-
 {
         name: "Friend Cube",
         subtitle: "[ React Project ]",
